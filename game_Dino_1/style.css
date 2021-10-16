@@ -1,0 +1,58 @@
+.game{
+    width: 600px; 
+    height: 200px;
+    border-bottom: 1px solid rgb(255, 0, 0);
+    margin: auto;
+}
+#dino{
+    width: 50px;
+    height: 50px;
+    background-image: url(img/акацуки_игра_2Asset\ 16.png);
+    background-size: 50px 50px;
+    position: relative;
+    top:150px;
+}
+#kaktus{
+    width: 70px;
+    height: 50px;
+    background-image: url(img/акацуки_игра_1Asset\ 15.png);
+    background-size: 70px 50px;
+    position: relative;
+    top:100px;
+    left: 500px;
+    animation: kaktusMov 2s infinite linear ;
+}
+@keyframes kaktusMov{
+    0%{
+        left: 580px;
+    }
+    100%{
+        left: -50%;
+    }
+}
+.jump{
+    animation: jump 0.5s  linear ;
+}
+@keyframes jump{
+    0%{
+        top: 150px;
+    }
+    30%{
+        top:90px;
+    }
+    60%{
+        top:50px;
+    }
+    80%{
+        top:90px
+
+    }
+
+    90%{
+        top:100px
+    }
+
+    100%{
+        top: 100px;
+    }
+}
